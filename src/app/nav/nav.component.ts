@@ -1,18 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { ISourceOptions } from 'tsparticles';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
-
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-nav',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.css'],
+
 })
-export class AppComponent implements OnInit {
+export class NavComponent implements OnInit {
+
+  isOpened: boolean = true;
+  desktopViewWidth: number = 950;
+  netImage:any = "../assets/images/me.jpg";
+
+
   myStyle: object = {};
   width: number = 100;
 	height: number = 100;
@@ -67,11 +72,11 @@ export class AppComponent implements OnInit {
       },
       particles: {
           color: {
-              value: "#C0C0C0"
+              value: "#A9A9A9"
           },
           links: {
-              color: "#C0C0C0",
-              distance: 150,
+              color: "#A9A9A9",
+              distance: 145,
               enable: true,
               opacity: 0.5,
               width: 1
@@ -92,7 +97,7 @@ export class AppComponent implements OnInit {
                   enable: true,
                   value_area: 800
               },
-              value: 80
+              value: 150
           },
           opacity: {
               value: 0.5
@@ -129,6 +134,8 @@ export class AppComponent implements OnInit {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
   ngOnInit() {
+    this.onResize(window.innerWidth);
+
     this.myStyle = {
         'position': 'fixed',
         'width': '100%',
@@ -139,5 +146,10 @@ export class AppComponent implements OnInit {
         'right': 0,
         'bottom': 0,
     };
+  }
+
+  @HostListener('window:resize', ['$event.target.innerWidth'])
+  onResize(width: number) {
+    this.isOpened = width >= this.desktopViewWidth;
   }
 }

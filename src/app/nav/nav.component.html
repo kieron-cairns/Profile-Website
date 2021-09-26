@@ -1,0 +1,65 @@
+<html>
+<head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Extra+Condensed:wght@500&display=swap');
+  </style>
+</head>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav cla #drawer class="sidenav red-container" [opened]="isOpened" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+
+      <div style="height: 15%;">
+
+      </div>
+
+    <img [src]="netImage" class="profile-img">
+    <mat-nav-list class="sidebar-font">
+      <a mat-list-item href="#">ABOUT</a>
+      <a mat-list-item href="#">EXPERIENCE</a>
+      <a mat-list-item href="#">EDUCATION</a>
+      <a mat-list-item href="#">SKILLS</a>
+      <a mat-list-item href="#">AWARDS</a>
+
+      <!-- <div class="box" style="margin-top: 325px;">
+        <div class="wrapper">
+
+        </div>
+      </div> -->
+
+      <div class="box" style="margin-top: 135px;">
+        <div class="wrapper">
+
+        </div>
+      </div>
+
+
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="hide-on-large-screens">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>kieron-blog</span>
+    </mat-toolbar>
+
+
+    <!-- <app-home></app-home> -->
+    <!-- <app-test></app-test> -->
+    <!-- <div style="height: 15%;"></div> -->
+    <ng-particles id="tsparticles" [options]="particlesOptions" [style]="myStyle" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+    <app-test></app-test>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</html>
