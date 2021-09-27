@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
-import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
 import { TestComponent } from './test/test.component';
 
 
@@ -11,11 +11,11 @@ const routes: Routes = [
     path: 'container', component: ContainerComponent
   },
   {
-    path: 'home', component: HomeComponent
-  },
-  {
     path: 'test', component: TestComponent
   },
+  {
+    path: 'app-nav', component: NavComponent
+  }
 
 
 ];

@@ -22,7 +22,7 @@
       <a mat-list-item href="#about">ABOUT</a>
       <a mat-list-item href="#experience">EXPERIENCE</a>
       <a mat-list-item href="#education">EDUCATION</a>
-      <a mat-list-item (click)="navigateTo('target')">SKILLS</a>
+      <!-- <a mat-list-item (click)="callMe(target)">SKILLS</a> -->
       <a mat-list-item href="#">AWARDS</a>
 
       <!-- <div class="box" style="margin-top: 325px;">
@@ -63,10 +63,11 @@
 
 
     </app-test> -->
-    <router-outlet></router-outlet>
-    <!-- <ng-particles id="tsparticles" [options]="particlesOptions" [style]="myStyle" (particlesLoaded)="particlesLoaded($event)"></ng-particles> -->
+    <!-- <router-outlet></router-outlet> -->
+    <ng-particles id="tsparticles" [options]="particlesOptions" [style]="myStyle" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
 
-
+    <!-- <app-home></app-home> -->
+    <app-test></app-test>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

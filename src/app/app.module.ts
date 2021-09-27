@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,12 +13,9 @@ import { MatListModule } from '@angular/material/list';
 import { NgParticlesModule } from 'ng-particles';
 import { ContainerComponent } from './container/container.component';
 import { TestComponent } from './test/test.component';
-import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { RouterModule } from '@angular/router';
-
 
 @NgModule({
   declarations: [
@@ -27,7 +23,6 @@ import { RouterModule } from '@angular/router';
     NavComponent,
     ContainerComponent,
     TestComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,

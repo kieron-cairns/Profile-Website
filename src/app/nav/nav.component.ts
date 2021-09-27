@@ -6,17 +6,22 @@ import { ISourceOptions } from 'tsparticles';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { TestComponent } from '../test/test.component';
-import { EventEmitter } from '@angular/core';
 import { NavigateService } from '../navigate.service';
+import { EventEmitter} from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-nav',
-  providers:[TestComponent],
+  providers:[TestComponent, AppComponent],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
 
 })
 export class NavComponent implements OnInit {
+
+
+
+  @Output() Navigate = new EventEmitter();
 
   isOpened: boolean = true;
   desktopViewWidth: number = 950;
@@ -135,14 +140,17 @@ export class NavComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent, private navService: NavigateService) {}
+  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent, private comp: AppComponent) {
 
-  navigateTo(status: string): void {
-    this.navService.navigate.emit(status);
+  }
+
+  public callMe(element : HTMLElement): void {
+    this.comp.scrollToElement(element)
   }
 
 
-  @Output() Navigate = new EventEmitter();
+
+
 
   ngOnInit() {
     this.onResize(window.innerWidth);

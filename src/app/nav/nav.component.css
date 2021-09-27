@@ -30,7 +30,9 @@
 
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 .red-container {
   background-color:#000000;
   overflow: hidden;

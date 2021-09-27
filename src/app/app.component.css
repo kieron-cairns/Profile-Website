@@ -2,7 +2,19 @@ body {
   padding-left: 20%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  padding-left: 20%;
+}
+.test-style {
+  position: relative;
+}
+
 h1.about{
+  position: relative;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
   font-size: 6.5em;
