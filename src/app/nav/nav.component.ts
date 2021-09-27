@@ -97,7 +97,7 @@ export class NavComponent implements OnInit {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 0.5,
+              speed: 0.35,
               straight: false
           },
           number: {
