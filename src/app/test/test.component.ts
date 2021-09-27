@@ -117,24 +117,11 @@ export class TestComponent implements OnInit {
   }
 
 
-
   particlesInit(main: Main): void {
       console.log(main);
 
       // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
   }
-
-  @Output() myEvent = new EventEmitter();
-
-  public scrollToElement($element : any): void {
-    // const $element = 'target';
-    // $element = document.getElementById("#target")
-    console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-
-
-
 
   ngOnInit(): void {
   }

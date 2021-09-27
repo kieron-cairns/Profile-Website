@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ContainerComponent } from './container/container.component';
 import { NavComponent } from './nav/nav.component';
 import { TestComponent } from './test/test.component';
 
 
 const routes: Routes = [
-  {
-    path: 'container', component: ContainerComponent
-  },
   {
     path: 'test', component: TestComponent
   },

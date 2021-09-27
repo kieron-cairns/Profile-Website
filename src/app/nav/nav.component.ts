@@ -5,14 +5,13 @@ import { map, shareReplay } from 'rxjs/operators';
 import { ISourceOptions } from 'tsparticles';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
-import { TestComponent } from '../test/test.component';
-import { NavigateService } from '../navigate.service';
 import { EventEmitter} from '@angular/core';
 import { AppComponent } from '../app.component';
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-nav',
-  providers:[TestComponent, AppComponent],
+  providers:[AboutComponent, AppComponent],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
 
@@ -44,12 +43,12 @@ export class NavComponent implements OnInit {
           }
 
       },
-      image: {
-        src: "img/github.svg",
-        width: 100,
-        height: 100
-      },
-      fpsLimit: 60,
+      // image: {
+      //   src: "img/github.svg",
+      //   width: 100,
+      //   height: 100
+      // },
+      fpsLimit: 20,
       interactivity: {
           detectsOn: "canvas",
           events: {
@@ -65,10 +64,10 @@ export class NavComponent implements OnInit {
           },
           modes: {
               bubble: {
-                  distance: 400,
+                  distance: 800,
                   duration: 2,
                   opacity: 0.8,
-                  size: 40
+                  size: 80
               },
               push: {
                   quantity: 4
@@ -85,38 +84,38 @@ export class NavComponent implements OnInit {
           },
           links: {
               color: "#A9A9A9",
-              distance: 145,
+              distance: 175,
               enable: true,
               opacity: 0.5,
               width: 1
           },
           collisions: {
-              enable: true
+              enable: false
           },
           move: {
               direction: "none",
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 1,
+              speed: 0.5,
               straight: false
           },
           number: {
               density: {
                   enable: true,
-                  value_area: 1200
+                  value_area: 1675
               },
-              value: 150
+              value: 145
           },
           opacity: {
-              value: 0.5
+              value: 0.4
           },
           shape: {
               type: "circle"
           },
           size: {
               random: true,
-              value: 2
+              value: 3
           }
       },
       detectRetina: true
@@ -140,7 +139,7 @@ export class NavComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent, private comp: AppComponent) {
+  constructor(private breakpointObserver: BreakpointObserver, private comp: AppComponent) {
 
   }
 
