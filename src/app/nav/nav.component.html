@@ -2,6 +2,8 @@
 <head>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Extra+Condensed:wght@500&display=swap');
+
+
   </style>
 </head>
 
@@ -15,11 +17,11 @@
 
       </div>
 
-    <img [src]="netImage" class="profile-img">
+    <img [src]="netImage" class="profile-img" style="height:250px; width: 250px;">
     <mat-nav-list class="sidebar-font">
-      <a mat-list-item href="#">ABOUT</a>
-      <a mat-list-item href="#">EXPERIENCE</a>
-      <a mat-list-item href="#">EDUCATION</a>
+      <a mat-list-item href="#about">ABOUT</a>
+      <a mat-list-item href="#experience">EXPERIENCE</a>
+      <a mat-list-item href="#education">EDUCATION</a>
       <a mat-list-item href="#">SKILLS</a>
       <a mat-list-item href="#">AWARDS</a>
 
@@ -29,13 +31,13 @@
         </div>
       </div> -->
 
-      <div class="box" style="margin-top: 135px;">
-        <div class="wrapper">
+      <div class="box" style="margin-top: 110px;">
+        <!-- <div class="wrapper">
 
-        </div>
+        </div> -->
       </div>
 
-
+      <!-- <section id="lol"></section> -->
 
 
     </mat-nav-list>
@@ -57,7 +59,10 @@
     <!-- <app-test></app-test> -->
     <!-- <div style="height: 15%;"></div> -->
     <ng-particles id="tsparticles" [options]="particlesOptions" [style]="myStyle" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
-    <app-test></app-test>
+    <app-test>
+
+
+    </app-test>
 
 
   </mat-sidenav-content>

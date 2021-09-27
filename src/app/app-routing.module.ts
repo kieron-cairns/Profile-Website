@@ -4,6 +4,7 @@ import { ContainerComponent } from './container/container.component';
 import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
 
+
 const routes: Routes = [
   {
     path: 'container', component: ContainerComponent
@@ -13,11 +14,13 @@ const routes: Routes = [
   },
   {
     path: 'test', component: TestComponent
-  }
+  },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+    {anchorScrolling: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

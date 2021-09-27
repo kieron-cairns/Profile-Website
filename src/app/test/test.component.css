@@ -43,8 +43,6 @@ p.about {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 } */
 
-
-
 h1.experience {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
@@ -65,7 +63,6 @@ h3.experience {
   padding-top: 50px;
   padding-left: 30px;
 }
-
 
 p.experience {
   right: 30px;
@@ -88,7 +85,6 @@ h1.education {
   padding-left: 30px;
 }
 
-
 h3.education {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
@@ -98,7 +94,6 @@ h3.education {
   padding-top: 50px;
   padding-left: 30px;
 }
-
 
 p.education {
   right: 30px;

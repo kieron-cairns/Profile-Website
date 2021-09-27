@@ -6,6 +6,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { EventEmitter } from 'stream';
+import { Output } from '@angular/core';
+
 
 import { NavComponent } from './nav.component';
 

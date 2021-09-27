@@ -5,8 +5,12 @@ import { map, shareReplay } from 'rxjs/operators';
 import { ISourceOptions } from 'tsparticles';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
+import { TestComponent } from '../test/test.component';
+
+
 @Component({
   selector: 'app-nav',
+  providers:[TestComponent],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
 
@@ -16,7 +20,6 @@ export class NavComponent implements OnInit {
   isOpened: boolean = true;
   desktopViewWidth: number = 950;
   netImage:any = "../assets/images/me.jpg";
-
 
   myStyle: object = {};
   width: number = 100;
@@ -95,7 +98,7 @@ export class NavComponent implements OnInit {
           number: {
               density: {
                   enable: true,
-                  value_area: 800
+                  value_area: 1200
               },
               value: 150
           },
@@ -113,11 +116,10 @@ export class NavComponent implements OnInit {
       detectRetina: true
   };
 
-
-
   particlesLoaded(container: Container): void {
       console.log(container);
   }
+
 
 
   particlesInit(main: Main): void {
@@ -132,9 +134,17 @@ export class NavComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent) {}
+
+  // public scrollToElement(target : any): void
+  // {
+  //   this.test.scrollToElement()
+  // }
+
   ngOnInit() {
     this.onResize(window.innerWidth);
+
+
 
     this.myStyle = {
         'position': 'fixed',
@@ -147,7 +157,6 @@ export class NavComponent implements OnInit {
         'bottom': 0,
     };
   }
-
   @HostListener('window:resize', ['$event.target.innerWidth'])
   onResize(width: number) {
     this.isOpened = width >= this.desktopViewWidth;
