@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Output } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -6,7 +6,8 @@ import { ISourceOptions } from 'tsparticles';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { TestComponent } from '../test/test.component';
-
+import { EventEmitter } from '@angular/core';
+import { NavigateService } from '../navigate.service';
 
 @Component({
   selector: 'app-nav',
@@ -134,15 +135,18 @@ export class NavComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent) {}
+  constructor(private breakpointObserver: BreakpointObserver, private test: TestComponent, private navService: NavigateService) {}
 
-  // public scrollToElement(target : any): void
-  // {
-  //   this.test.scrollToElement()
-  // }
+  navigateTo(status: string): void {
+    this.navService.navigate.emit(status);
+  }
+
+
+  @Output() Navigate = new EventEmitter();
 
   ngOnInit() {
     this.onResize(window.innerWidth);
+
 
 
 
@@ -157,6 +161,7 @@ export class NavComponent implements OnInit {
         'bottom': 0,
     };
   }
+
   @HostListener('window:resize', ['$event.target.innerWidth'])
   onResize(width: number) {
     this.isOpened = width >= this.desktopViewWidth;
