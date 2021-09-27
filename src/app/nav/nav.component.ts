@@ -18,13 +18,11 @@ import { AboutComponent } from '../about/about.component';
 })
 export class NavComponent implements OnInit {
 
-
-
   @Output() Navigate = new EventEmitter();
 
   isOpened: boolean = true;
   desktopViewWidth: number = 950;
-  netImage:any = "../assets/images/me.jpg";
+  profileImage:any = "../assets/images/me.jpg";
 
   myStyle: object = {};
   width: number = 100;

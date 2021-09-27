@@ -107,3 +107,36 @@ p.education {
 }
 
 
+h1.skills{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 4.5em;
+  /* color: red; */
+  line-height: 1;
+
+  right: 30px;
+  padding-left: 30px;
+  padding-top: 300px;
+
+}
+
+h3.skills {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  /* color: red; */
+  line-height: 1;
+
+  right: 30px;
+  padding-left: 30px;
+}
+
+
+
+p.skills {
+  right: 30px;
+  font-size: 1.75em;
+  line-height: 1;
+  padding-top: 75px;
+
+}

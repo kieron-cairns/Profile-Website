@@ -7,13 +7,49 @@ import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { ISourceOptions } from 'tsparticles';
 
+
+interface ImageListItem {
+  src: string;
+}
+const images: ImageListItem[] = [
+  {
+    src: "../assets/images/c-sharp-logo.png"
+  },
+  {
+    src: "../assets/images/sql-logo.png"
+  },
+  {
+    src: "../assets/images/angular-logo.png"
+  },
+  {
+    src: "../assets/images/JavaScript-logo.png"
+  },
+  {
+    src: "../assets/images/npm-logo.png"
+  },
+  {
+    src: "../assets/images/python-logo.png"
+  }
+]
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent implements OnInit {
   // @ViewChild('target') target : ElementRef;
+
+
+
+  cSharpImage:any = "../assets/images/c-sharp-logo.png";
+  sqlImage:any = "../assets/images/sql-logo.png";
+  angularImage:any = "../assets/images/angular-logo.png";
+
+
+
+
 
   constructor(private navService: NavigateService) {}
 
@@ -32,7 +68,6 @@ export class AboutComponent implements OnInit {
           color: {
               value: "#FFFFFF"
           }
-
       },
       image: {
         src: "img/github.svg",
