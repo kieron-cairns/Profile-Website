@@ -115,7 +115,7 @@ export class NavComponent implements OnInit {
           },
           size: {
               random: true,
-              value: 3
+              value: 2
           }
       },
       detectRetina: true
