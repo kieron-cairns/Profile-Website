@@ -19,9 +19,9 @@
 
     <img [src]="profileImage" class="profile-img" style="height:250px; width: 250px;">
     <mat-nav-list class="sidebar-font">
-      <a mat-list-item href="#about">ABOUT</a>
-      <a mat-list-item href="#experience">EXPERIENCE</a>
-      <a mat-list-item href="#education">EDUCATION</a>
+      <a mat-list-item href="/about#about">ABOUT</a>
+      <a mat-list-item href="/about#experience">EXPERIENCE</a>
+      <a mat-list-item href="/about#education">EDUCATION</a>
       <!-- <a mat-list-item (click)="callMe(target)">SKILLS</a> -->
       <a mat-list-item href="#">INTERESTS</a>
       <a mat-list-item href="/blog">BLOG</a>
@@ -69,7 +69,8 @@
     <ng-particles id="tsparticles" [options]="particlesOptions" [style]="myStyle" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
 
     <!-- <app-home></app-home> -->
-    <app-about></app-about>>
+    <!-- <app-about></app-about>> -->
+    <router-outlet></router-outlet>
 
   </mat-sidenav-content>
 </mat-sidenav-container>

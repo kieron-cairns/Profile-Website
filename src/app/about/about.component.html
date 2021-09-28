@@ -31,6 +31,7 @@
           <h1 class="experience">EXPERIENCE</h1>
 
           <h3 class="experience">C# .NET Developer, Satoshi Systems Ltd, December 2020 - Current</h3>
+          <h3 class="experience-time-period">Test</h3>
           <p class="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur pariatur iusto illum similique tempora aperiam, quas, cumque odio neque doloribus autem sit reprehenderit sunt atque porro enim adipisci esse?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio a blanditiis soluta recusandae aut maxime facilis ipsum fugit veritatis, ea aliquam voluptas, rerum aliquid non iste, autem perspiciatis ipsa.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde consectetur! Laudantium provident natus, magnam dolore dolor pariatur doloribus nostrum. Reiciendis numquam perspiciatis fuga suscipit sit? Eos numquam odit unde.
@@ -67,16 +68,13 @@
          <img style="height: 90px; width: 90px;" [src]="image">
        </div>
 
-       <div *ngFor="let tick of languagesAndTools">
+       <div class="skills">
+       <div class="skills" *ngFor="let tick of languagesAndTools">
          <!-- <img style="height: 50px; width: 50px;" [src]="checkMarkImgage"> -->
-        <h2 class="skills-image-logos"> ✓ {{tick}}</h2>
+        <h2 class="skills">✓ {{tick}}</h2>
       </div>
-
-
-
+    </div>
       </section>
-
-
     </body>
 </html>
 

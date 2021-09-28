@@ -68,6 +68,21 @@ h3.experience {
   padding-left: 30px;
 }
 
+h3.experience-time-period {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 900;
+  word-spacing: 10px;
+  font-size: 2.5em;
+  line-height: 1;
+  width: 50%;
+  right: 30px;
+  padding-top: 50px;
+  padding-left: 30px;
+  display : inline-block;
+  padding-left:30px;
+
+}
+
 p.experience {
   right: 30px;
   width: 50%;
@@ -141,21 +156,20 @@ h3.skills {
 }
 
 .skills-image-logos {
-  display : inline-block; padding-left:30px;
+  display : inline-block;
+  padding-left:30px;
+  padding-bottom: 50px;
 
 }
 
-.skills-image-logos {
-  display : inline-block; padding-left:30px;
-
-}
-
-
-
-p.skills {
+h2.skills {
   right: 30px;
   font-size: 1.75em;
   line-height: 1;
-  padding-top: 75px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: 'Roboto Mono', monospace;
+
 
 }
+
