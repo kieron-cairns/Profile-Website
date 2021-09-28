@@ -3,6 +3,7 @@
   <head>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
       </style>
     </head>
     <body>
@@ -29,19 +30,19 @@
         <section id="experience">
           <h1 class="experience">EXPERIENCE</h1>
 
-          <h3 class="experience">C# .NET Developer</h3>
+          <h3 class="experience">C# .NET Developer, Satoshi Systems Ltd, December 2020 - Current</h3>
           <p class="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur pariatur iusto illum similique tempora aperiam, quas, cumque odio neque doloribus autem sit reprehenderit sunt atque porro enim adipisci esse?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio a blanditiis soluta recusandae aut maxime facilis ipsum fugit veritatis, ea aliquam voluptas, rerum aliquid non iste, autem perspiciatis ipsa.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde consectetur! Laudantium provident natus, magnam dolore dolor pariatur doloribus nostrum. Reiciendis numquam perspiciatis fuga suscipit sit? Eos numquam odit unde.
           </p>
 
-          <h3 class="experience">Freelance</h3>
+          <h3 class="experience">Freelance, October 2019 - Current</h3>
           <p class="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur pariatur iusto illum similique tempora aperiam, quas, cumque odio neque doloribus autem sit reprehenderit sunt atque porro enim adipisci esse?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio a blanditiis soluta recusandae aut maxime facilis ipsum fugit veritatis, ea aliquam voluptas, rerum aliquid non iste, autem perspiciatis ipsa.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde consectetur! Laudantium provident natus, magnam dolore dolor pariatur doloribus nostrum. Reiciendis numquam perspiciatis fuga suscipit sit? Eos numquam odit unde.
           </p>
 
-          <h3 class="experience">Technical Services</h3>
+          <h3 class="experience">Technical Services, Egress Software Technologies, May 2019 - October 2019</h3>
           <p class="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur pariatur iusto illum similique tempora aperiam, quas, cumque odio neque doloribus autem sit reprehenderit sunt atque porro enim adipisci esse?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio a blanditiis soluta recusandae aut maxime facilis ipsum fugit veritatis, ea aliquam voluptas, rerum aliquid non iste, autem perspiciatis ipsa.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde consectetur! Laudantium provident natus, magnam dolore dolor pariatur doloribus nostrum. Reiciendis numquam perspiciatis fuga suscipit sit? Eos numquam odit unde.
@@ -61,6 +62,18 @@
       <section>
         <h1 class="skills">SKILLS</h1>
         <h3 class="skills">PROGRAMMING LANGUAGES & TOOLS</h3>
+       <div class="skills-image-logos"  *ngFor="let image of imgLogos">
+
+         <img style="height: 90px; width: 90px;" [src]="image">
+       </div>
+
+       <div *ngFor="let tick of languagesAndTools">
+         <!-- <img style="height: 50px; width: 50px;" [src]="checkMarkImgage"> -->
+        <h2 class="skills-image-logos"> ✓ {{tick}}</h2>
+      </div>
+
+
+
       </section>
 
 
