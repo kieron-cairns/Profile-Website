@@ -35,9 +35,11 @@ html {
 }
 .red-container {
   background-color:#222222;
-  overflow: hidden;
   height: 100%;
+
 }
+
+
 
 .mat-list-item {
   font-family: 'Roboto', sans-serif;
@@ -47,22 +49,20 @@ html {
 
 .toolber {
   background-color: #191970;
+  position: sticky;
+  overflow: hidden;
+
+}
+
+.position-fixed {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 
 
 
-/* .box {
-  background-color: #191970;
-  margin-top: 50px;
-  height: 90px;
-  padding: 5% 20px;
-
-  -webkit-transform: skewY(-5deg);
-  -moz-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  -o-transform: skewY(-5deg);
-  transform: skewY(-5deg);
-} */
 
 .box {
   background-color: #191970;

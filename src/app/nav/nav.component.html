@@ -7,8 +7,8 @@
   </style>
 </head>
 
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav cla #drawer class="sidenav red-container" [opened]="isOpened" fixedInViewport
+<mat-sidenav-container  style="position: fixed;" class="sidenav-container">
+  <mat-sidenav cla #drawer class="sidenav red-container" [autoFocus]="false" [opened]="isOpened" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
@@ -18,7 +18,7 @@
       </div>
 
     <img [src]="profileImage" class="profile-img" style="height:250px; width: 250px;">
-    <mat-nav-list class="sidebar-font">
+    <mat-nav-list (click)="drawer.toggle()" class="sidebar-font">
       <a mat-list-item href="#about">ABOUT</a>
       <a mat-list-item href="#experience">EXPERIENCE</a>
       <a mat-list-item href="#education">EDUCATION</a>
@@ -34,7 +34,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="hide-on-large-screens">
+    <mat-toolbar color="primary" class="hide-on-large-screens toolber">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -42,7 +42,7 @@
         (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>kieron-blog</span>
+      <span></span>
     </mat-toolbar>
 
 
