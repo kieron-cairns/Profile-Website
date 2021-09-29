@@ -10,6 +10,14 @@ h1.about{
   padding-top: 300px;
 
 }
+.about-website-links
+{
+  /* display : inline-block; */
+  padding-left: 30px;
+  width: 60px;
+  height: 60px;
+
+}
 
 h3.about {
   font-family: 'Saira Extra Condensed', sans-serif;
@@ -53,43 +61,49 @@ h1.experience {
   padding-top: 400px;
   right: 30px;
   padding-left: 30px;
+  padding-bottom: 40px;
 }
 
 
 h3.experience {
+  /* font-family: 'Saira Extra Condensed', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Saira Extra Condensed', sans-serif;
+
   font-weight: 900;
   word-spacing: 10px;
-  font-size: 2.5em;
+  font-size: 2.2em;
   line-height: 1;
-  width: 50%;
+  width: 25%;
   right: 30px;
-  padding-top: 50px;
   padding-left: 30px;
+  padding-right: 15%;
+  /* padding-top: 60px; */
+
 }
 
 h3.experience-time-period {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
   word-spacing: 10px;
-  font-size: 2.5em;
+  font-size: 1.75em;
   line-height: 1;
-  width: 50%;
+  /* width: 50%; */
   right: 30px;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 30px;
-  display : inline-block;
+  /* display : inline-block; */
   padding-left:30px;
 
 }
 
 p.experience {
   right: 30px;
-  width: 50%;
-  font-size: 1.35em;
+  width: 65%;
+  font-size: 1.25em;
   line-height: 1.5;
-  padding-top: 10px;
-  padding-bottom: 75px;
+  padding-top: 1.5px;
+  /* padding-bottom: 75px; */
   padding-left: 30px;
   font-family: 'Roboto Mono', monospace;
 }
@@ -115,10 +129,21 @@ h3.education {
   padding-left: 30px;
 }
 
+h3.education-course {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 900;
+  word-spacing: 10px;
+  font-size: 1.75em;
+  line-height: 1;
+  right: 30px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
 p.education {
   right: 30px;
   width: 50%;
-  font-size: 1.35em;
+  font-size: 1.25em;
   line-height: 1.5;
   padding-top: 10px;
 
@@ -171,5 +196,30 @@ h2.skills {
   font-family: 'Roboto Mono', monospace;
 
 
+}
+
+
+h1.interests {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 4.5em;
+  line-height: 1;
+  padding-top: 400px;
+  right: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 400px;
+}
+
+p.interests {
+  right: 30px;
+  width: 65%;
+  font-size: 1.25em;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 75px;
+  padding-left: 30px;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 700px;
 }
 

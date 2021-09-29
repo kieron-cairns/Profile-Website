@@ -88,7 +88,7 @@ export class NavComponent implements OnInit {
               width: 1
           },
           collisions: {
-              enable: false
+              enable: true
           },
           move: {
               direction: "none",

@@ -11,10 +11,13 @@ const routes: Routes = [
     path: 'about', component: AboutComponent
   },
   {
-    path: 'app-nav', component: NavComponent
+    path: 'blog', component: BlogComponent
   },
   {
     path: 'blog', component: BlogComponent
+  },
+  {
+    path: '', component: AboutComponent
   }
 
 
