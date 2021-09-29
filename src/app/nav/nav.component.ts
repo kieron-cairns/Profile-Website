@@ -101,7 +101,7 @@ export class NavComponent implements OnInit {
           number: {
               density: {
                   enable: true,
-                  value_area: 1675
+                  value_area: 1275
               },
               value: 145
           },
@@ -141,18 +141,8 @@ export class NavComponent implements OnInit {
 
   }
 
-  public callMe(element : HTMLElement): void {
-    this.comp.scrollToElement(element)
-  }
-
-
-
-
-
   ngOnInit() {
     this.onResize(window.innerWidth);
-
-
 
 
     this.myStyle = {

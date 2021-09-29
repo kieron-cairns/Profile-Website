@@ -8,7 +8,6 @@ h1.about{
   right: 30px;
   padding-left: 30px;
   padding-top: 300px;
-
 }
 .about-website-links
 {
@@ -22,12 +21,14 @@ h1.about{
 h3.about {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.4em;
   /* color: red; */
   line-height: 1;
 
   right: 30px;
   padding-left: 30px;
+  padding-right: 30px;
+
 }
 
 .about > span {
@@ -74,7 +75,7 @@ h3.experience {
   word-spacing: 10px;
   font-size: 2.2em;
   line-height: 1;
-  width: 25%;
+  /* width: 25%; */
   right: 30px;
   padding-left: 30px;
   padding-right: 15%;
@@ -99,14 +100,15 @@ h3.experience-time-period {
 
 p.experience {
   right: 30px;
-  width: 65%;
+  /* width: 65%; */
   font-size: 1.25em;
   line-height: 1.5;
-  padding-top: 1.5px;
+  padding-top: 6.75px;
   /* padding-bottom: 75px; */
   padding-left: 30px;
   font-family: 'Roboto Mono', monospace;
 }
+
 
 h1.education {
   font-family: 'Saira Extra Condensed', sans-serif;
@@ -142,7 +144,6 @@ h3.education-course {
 
 p.education {
   right: 30px;
-  width: 50%;
   font-size: 1.25em;
   line-height: 1.5;
   padding-top: 10px;
@@ -187,6 +188,11 @@ h3.skills {
 
 }
 
+li.skills {
+  display : inline-block;
+
+}
+
 h2.skills {
   right: 30px;
   font-size: 1.75em;
@@ -213,7 +219,6 @@ h1.interests {
 
 p.interests {
   right: 30px;
-  width: 65%;
   font-size: 1.25em;
   line-height: 1.5;
   padding-top: 20px;
@@ -223,3 +228,13 @@ p.interests {
   padding-bottom: 700px;
 }
 
+@media (min-width: 1200px) {
+ p {
+    width: 65%;
+
+  }
+}
+
+p {
+  padding-right: 25px;
+}

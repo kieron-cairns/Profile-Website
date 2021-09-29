@@ -25,7 +25,8 @@ export class AboutComponent implements OnInit {
  "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
  "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
  "https://cdn.freebiesupply.com/logos/thumbs/2x/npm-logo.png",
-"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png",
+"https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png"
   ]
 
   languagesAndTools = [
@@ -35,7 +36,8 @@ export class AboutComponent implements OnInit {
     "Angular.js",
     "JavaScript",
     "Npm",
-    "Python"
+    "Python",
+    "Docker"
   ]
 
 
