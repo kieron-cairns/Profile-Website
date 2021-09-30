@@ -1,3 +1,7 @@
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
 h1.about{
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
@@ -21,7 +25,7 @@ h1.about{
 h3.about {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 2.4em;
+  font-size: 2.2em;
   /* color: red; */
   line-height: 1;
 
@@ -57,7 +61,7 @@ p.about {
 h1.experience {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 4.5em;
+  font-size: 4.2em;
   line-height: 1;
   padding-top: 400px;
   right: 30px;
@@ -67,19 +71,17 @@ h1.experience {
 
 
 h3.experience {
-  /* font-family: 'Saira Extra Condensed', sans-serif; */
-  /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 
   font-weight: 900;
-  word-spacing: 10px;
-  font-size: 2.2em;
+  /* word-spacing: 2.0px; */
+  font-size: 1.85em;
   line-height: 1;
   /* width: 25%; */
   right: 30px;
   padding-left: 30px;
   padding-right: 15%;
-  /* padding-top: 60px; */
+  padding-top: 60px;
 
 }
 
@@ -113,7 +115,7 @@ p.experience {
 h1.education {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 4.5em;
+  font-size: 3.9em;
   line-height: 1;
   padding-top: 400px;
   right: 30px;
@@ -121,10 +123,10 @@ h1.education {
 }
 
 h3.education {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 900;
   word-spacing: 10px;
-  font-size: 2.5em;
+  font-size: 1.85em;
   line-height: 1;
   right: 30px;
   padding-top: 50px;
@@ -132,10 +134,10 @@ h3.education {
 }
 
 h3.education-course {
-  font-family: 'Saira Extra Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 900;
   word-spacing: 10px;
-  font-size: 1.75em;
+  font-size: 1.45em;
   line-height: 1;
   right: 30px;
   padding-top: 5px;
@@ -157,7 +159,7 @@ p.education {
 h1.skills{
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 4.5em;
+  font-size: 4.2em;
   /* color: red; */
   line-height: 1;
 
@@ -170,7 +172,7 @@ h1.skills{
 h3.skills {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.2em;
   /* color: red; */
   line-height: 1;
 
@@ -236,6 +238,6 @@ p.interests {
 }
 
 p {
-  padding-right: 25px;
-  font-size: 1.25em;
+  padding-right: 35px;
+  font-size: 1.20em;
 }
