@@ -15,7 +15,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color:#222222;
+  background-color:#8B4000;
 }
 
 @media only screen and (min-width: 950px) {
@@ -24,9 +24,20 @@
   }
 }
 
+div.profile {
+  height: 250px;
+    width: 235px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
 .profile-img {
-  height: 25%;
-  border-radius: 50%;
+
+  height: 100%;
+    max-width:235px;
+    border-radius: 2px;
+    background-color: rgb(196 196 196);
 
 }
 
@@ -34,7 +45,7 @@ html {
   scroll-behavior: smooth;
 }
 .red-container {
-  background-color:#222222;
+  background-color:#8B4000	;
   height: 100%;
 
 }

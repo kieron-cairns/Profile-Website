@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { ViewChild } from '@angular/core';
@@ -6,6 +6,8 @@ import { NavigateService } from '../navigate.service';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { ISourceOptions } from 'tsparticles';
+declare var anime: any;              // declare like this
+declare var textWrapper : any
 
 @Component({
   selector: 'app-about',
@@ -13,7 +15,7 @@ import { ISourceOptions } from 'tsparticles';
   styleUrls: ['./about.component.css']
 })
 
-export class AboutComponent implements OnInit {
+export class AboutComponent implements AfterViewInit {
   // @ViewChild('target') target : ElementRef;
 
   checkMarkImgage:any = "../assets/images/check-mark.png";
@@ -157,6 +159,31 @@ export class AboutComponent implements OnInit {
       // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+    // Animation code goes here
+     // Wrap every letter in a span
+  textWrapper = document.querySelector('.an-1');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.an-1 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el : any, i : any) => 70*i
+  }).add({
+    targets: '.an-1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
   }
 }
+
+

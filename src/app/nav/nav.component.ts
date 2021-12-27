@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Output } from '@angular/core';
+import { Component, OnInit, HostListener, Output, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -8,6 +8,7 @@ import { Main } from 'tsparticles';
 import { EventEmitter} from '@angular/core';
 import { AppComponent } from '../app.component';
 import { AboutComponent } from '../about/about.component';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav',
@@ -19,6 +20,8 @@ import { AboutComponent } from '../about/about.component';
 export class NavComponent implements OnInit {
 
   @Output() Navigate = new EventEmitter();
+
+  // @ViewChild('sidenav') sidenav: MatSidenav;
 
   isOpened: boolean = true;
   desktopViewWidth: number = 950;
@@ -78,10 +81,10 @@ export class NavComponent implements OnInit {
       },
       particles: {
           color: {
-              value: "#A9A9A9"
+              value: "#70DBDB"
           },
           links: {
-              color: "#A9A9A9",
+              color: "#70DBDB",
               distance: 175,
               enable: true,
               opacity: 0.5,
