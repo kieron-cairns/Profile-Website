@@ -18,6 +18,9 @@ declare var textWrapper : any
 export class AboutComponent implements AfterViewInit {
   // @ViewChild('target') target : ElementRef;
 
+  testType: string = "Test Typing This String Here Fam";
+  start: boolean = false;
+
   checkMarkImgage:any = "../assets/images/check-mark.png";
 
   imgLogos = [
@@ -157,6 +160,10 @@ export class AboutComponent implements AfterViewInit {
       console.log(main);
 
       // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+  }
+
+  ngOnInit() {
+    setTimeout(() => this.start = true, 1000)
   }
 
   ngAfterViewInit(): void {

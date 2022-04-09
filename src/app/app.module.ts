@@ -16,7 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
-
+import { TypingAnimationModule } from 'angular-typing-animation';
+import { NgTypedDirective } from 'ng-typed';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { BlogComponent } from './blog/blog.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    TypingAnimationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

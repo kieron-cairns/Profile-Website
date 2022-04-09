@@ -20,8 +20,11 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "angular-typing-animation": "^0.5.4",
     "ng-particles": "^2.18.1",
+    "ng-typed": "^1.2.0",
     "rxjs": "~6.6.0",
+    "rxjs-compat": "^6.6.7",
     "tslib": "^2.3.0",
     "tsparticles": "^1.35.1",
     "zone.js": "~0.11.4"
