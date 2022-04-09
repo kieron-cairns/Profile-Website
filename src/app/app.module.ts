@@ -17,7 +17,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { TypingAnimationModule } from 'angular-typing-animation';
-import { NgTypedDirective } from 'ng-typed';
 @NgModule({
   declarations: [
     AppComponent,

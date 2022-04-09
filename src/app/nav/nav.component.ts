@@ -87,7 +87,7 @@ export class NavComponent implements OnInit {
               color: "#70DBDB",
               distance: 175,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.75,
               width: 1
           },
           collisions: {
