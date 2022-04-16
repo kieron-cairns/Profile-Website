@@ -9,6 +9,7 @@ import { EventEmitter} from '@angular/core';
 import { AppComponent } from '../app.component';
 import { AboutComponent } from '../about/about.component';
 import { MatSidenav } from '@angular/material/sidenav';
+import { CdkScrollable } from '@angular/cdk/scrolling';
 
 @Component({
   selector: 'app-nav',
@@ -19,9 +20,17 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class NavComponent implements OnInit {
 
+  // @HostListener("document:scroll", [])
+  // onWindowScroll() {
+  //   console.log("You just scolled");
+  // }
+
+
   @Output() Navigate = new EventEmitter();
 
   // @ViewChild('sidenav') sidenav: MatSidenav;
+
+
 
   isOpened: boolean = true;
   desktopViewWidth: number = 950;
@@ -147,7 +156,6 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     this.onResize(window.innerWidth);
 
-
     this.myStyle = {
         'position': 'fixed',
         'width': '100%',
@@ -160,8 +168,16 @@ export class NavComponent implements OnInit {
     };
   }
 
+  handleScrollEvent()
+  {
+    console.log("Scrolled");
+  }
   @HostListener('window:resize', ['$event.target.innerWidth'])
   onResize(width: number) {
     this.isOpened = width >= this.desktopViewWidth;
   }
+
+
+  // @HostListener('scroll', ['$event']) // for scroll events of the current element
+
 }

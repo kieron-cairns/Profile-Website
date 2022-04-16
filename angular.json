@@ -30,7 +30,7 @@
               "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/GetScrollPosition.js"]
           },
           "configurations": {
             "production": {

@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener ,AfterViewInit } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { ViewChild } from '@angular/core';
@@ -6,6 +6,7 @@ import { NavigateService } from '../navigate.service';
 import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { ISourceOptions } from 'tsparticles';
+import { interval, Observable } from 'rxjs';
 declare var anime: any;              // declare like this
 declare var textWrapper : any
 
@@ -17,10 +18,9 @@ declare var textWrapper : any
 
 export class AboutComponent implements AfterViewInit {
   // @ViewChild('target') target : ElementRef;
-
+  private timer : any;
   testType: string = "Test Typing This String Here Fam";
   start: boolean = false;
-
   checkMarkImgage:any = "../assets/images/check-mark.png";
 
   imgLogos = [
@@ -53,10 +53,151 @@ export class AboutComponent implements AfterViewInit {
 
   constructor(private navService: NavigateService) {}
 
+  isMobile = false
+  isPc = false
+
+
+  startOfExperience1 = false
+  endOfExperience1 = false
+
+  startOfMobExperience1 = false
+  endOfMobExperience1 = false
+
+  startOfExperience2 = false
+  endOfExperience2 = false
+
+  startOfMobExperience2 = false
+  endOfMobExperience2 = false
+
+  startOfExperience3 = false
+  endOfExperience3 = false
+
+  startOfMobExperience3 = false
+  endOfMobExperience3 = false
+
+  startOfExperience4 = false
+  endOfExperience4 = false
+
+  startOfExperience4Mob = false
+  endOfExperience4Mob = false
+@HostListener('window:scroll') onScroll(e: Event): void {
+
+  var pageYdistance = window.pageYOffset
+  console.log(pageYdistance)
+  // console.log(pageYdistance)
+
+  //Experience 1 PC
+
+  if(pageYdistance >= 400)
+  {
+    this.startOfExperience1 = true;
+  }
+  if(pageYdistance >= 840)
+  {
+    this.endOfExperience1 = true;
+  }
+
+  //Experience1 Mobile
+
+  if(pageYdistance >= 880)
+  {
+    this.startOfMobExperience1 = true;
+  }
+  if(pageYdistance >= 1699)
+  {
+    this.endOfMobExperience1 = true;
+  }
+
+    //Experience 2 PC
+
+  if(pageYdistance >= 860)
+  {
+    this.startOfExperience2 = true;
+  }
+  if(pageYdistance >= 1450)
+  {
+    this.endOfExperience2 = true;
+  }
+
+  //Experience 2 Mobile
+
+  if(pageYdistance >= 2329)
+  {
+    this.startOfMobExperience2 = true;
+  }
+  if(pageYdistance >= 3042)
+  {
+    this.endOfMobExperience2 = true;
+  }
+
+  //Experience 3 PC
+
+  if(pageYdistance >= 1750)
+  {
+    this.startOfExperience3 = true;
+  }
+  if(pageYdistance >= 1800)
+  {
+    this.endOfExperience3 = true;
+  }
+
+   //Experience 3 MOb
+
+   if(pageYdistance >= 3280)
+   {
+     this.startOfMobExperience3 = true;
+   }
+   if(pageYdistance >= 3918)
+   {
+     this.endOfMobExperience3 = true;
+   }
+
+   //Experience 4 PC
+
+  if(pageYdistance >= 2070)
+  {
+    this.startOfExperience4 = true;
+  }
+  if(pageYdistance >= 2170)
+  {
+    this.endOfExperience4 = true;
+  }
+   //Experience 4 MOB
+
+   if(pageYdistance >= 4200)
+   {
+     this.startOfExperience4Mob = true;
+   }
+   if(pageYdistance >= 4964)
+   {
+     this.endOfExperience4Mob = true;
+   }
+
+  console.log("isMobile:" + this.isMobile)
+  console.log("isPc:" + this.isPc)
+
+
+}
+
+@HostListener('window:resize', ['$event'])
+onResize() {
+  var innerWidth = window.innerWidth;
+  if (innerWidth <= 500) { // 768px portrait
+    this.isMobile = true;
+    this.isPc = false;
+  }
+  if (innerWidth >= 500) { // 768px portrait
+    this.isMobile = false
+    this.isPc = true
+  }
+}
 
   ngOnInit() {
-    setTimeout(() => this.start = true, 1000)
+    this.onResize()
+    setTimeout(() => this.start = true, 250)
+
   }
+
 
   ngAfterViewInit(): void {
     // Animation code goes here

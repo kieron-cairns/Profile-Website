@@ -1,4 +1,4 @@
-<html>
+
 <head>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Saira+Extra+Condensed:wght@500&display=swap');
@@ -7,7 +7,7 @@
   </style>
 </head>
 
-<mat-sidenav-container  style="position: fixed;" class="sidenav-container">
+<mat-sidenav-container>
   <mat-sidenav cla #drawer class="sidenav red-container" [opened]="isOpened" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -43,14 +43,15 @@
         (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span></span>
     </mat-toolbar>
 
 
     <!-- <app-home></app-home> -->
     <!-- <app-test></app-test> -->
     <!-- <div style="height: 15%;"></div> -->
-    <!-- <router-outlet></router-outlet> -->
+
+
+    <router-outlet></router-outlet>
     <!-- <app-test (Navigate)="navigateTo('target')">
 
 
@@ -60,10 +61,9 @@
 
     <!-- <app-home></app-home> -->
     <!-- <app-about></app-about>> -->
-    <router-outlet></router-outlet>
+    <router-outlet style="height: 110vh;"></router-outlet>
 
   </mat-sidenav-content>
 </mat-sidenav-container>
-</html>
 
 

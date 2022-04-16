@@ -65,12 +65,38 @@ h1.experience {
   font-weight: 900;
   font-size: 4.2em;
   line-height: 1;
-  padding-top: 400px;
+  padding-top: 200px;
   right: 30px;
   padding-left: 30px;
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 750px) {
+  h1.experience {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 4.2em;
+    line-height: 1;
+    padding-top: 150px;
+    right: 30px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+  }
+  h3.experience {
+    font-family: 'Roboto Mono', monospace;
+
+    font-weight: 900;
+    /* word-spacing: 2.0px; */
+    font-size: 1.85em;
+    line-height: 1;
+    /* width: 25%; */
+    right: 30px;
+    padding-left: 30px;
+    padding-right: 15%;
+    padding-top: 10px;
+
+  }
+}
 
 h3.experience {
   font-family: 'Roboto Mono', monospace;
@@ -83,7 +109,7 @@ h3.experience {
   right: 30px;
   padding-left: 30px;
   padding-right: 15%;
-  padding-top: 60px;
+  padding-top: 100px;
 
 }
 

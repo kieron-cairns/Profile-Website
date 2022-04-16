@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -18,12 +18,6 @@ export class AppComponent implements OnInit {
   myStyle: object = {};
   width: number = 100;
 	height: number = 100;
-
-  // @ViewChild("target", { static: false }) target : string;
-
-  // navigateTo(element: string) {
-  //   this[element].nativeElement.scrollIntoView({ behavior: "smooth" });
-  // }
 
  public scrollToElement($element : any): void {
     console.log($element);

@@ -1,5 +1,5 @@
 <!-- <app-nav></app-nav> -->
-<html>
+
   <head>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap');
@@ -11,7 +11,6 @@
       </style>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     </head>
-    <body>
 
 
 
@@ -45,7 +44,7 @@
 
 
           <p class="about">
-            <span typingAnimation [typeSpeed]="15" [condition]="start" [startDelay]="250">
+            <span typingAnimation [typeSpeed]="13" [condition]="start" [startDelay]="250">
               I am an experienced software & web developer that implements agile frameworks and languages to provide robust and scalable systems that can help your business grow. I enjoy challenging myself by keeping on top of the latest trends.
 
           </span>
@@ -55,74 +54,222 @@
 
         <section id="experience">
 
-          <h1 class="experience">EXPERIENCE</h1>
+          <h1 class="experience">
 
-          <h3 class="experience">Synectics Plc</h3>
-          <h3 class="experience-time-period">November 2021 - Current</h3><br>
+            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              EXPERIENCE
+          </span>
+          <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            EXPERIENCE
+        </span>
+            </h1>
+          <h3 class="experience">
+            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            Synectics Plc
+            </span>
+            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              Synectics Plc
+            </span>
+          </h3>
+          <h3 class="experience-time-period">
+            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            November 2021 - Current
+            </span>
+            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              November 2021 - Current
+              </span>
+          </h3><br>
           <div>
           <p class="experience">
-
+            <span *ngIf="this.startOfExperience1 && this.isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Created Rest APIs for data management and event subscribers to govern the state of data within applications
+            </span>
+            <span *ngIf="this.startOfMobExperience1 && this.isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="500" [hideCursorOnComplete]="true">
+              • Created Rest APIs for data management and event subscribers to govern the state of data within applications
+              </span>
+
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Implemented event driven based enrichment to add additional data to incoming events that result in the publication of newly enriched same version events
+            </span>
+            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start"  [startDelay]="1500" [hideCursorOnComplete]="true">
+              • Implemented event driven based enrichment to add additional data to incoming events that result in the publication of newly enriched same version events
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gained the understanding of applying SOLID principles to OOP design to achieve scalability and easy addition or removal of components whilst keeping classed based dependencies to a minimum.
+         </span>
+         <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          • Gained the understanding of applying SOLID principles to OOP design to achieve scalability and easy addition or removal of components whilst keeping classed based dependencies to a minimum.
+       </span>
           </p>
           <p class="experience">
-            • Gained experience with implementing micro services within applications applying IDEAL principles to such micro services.
+            <span *ngIf="this.endOfExperience1 && isPc" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            • Obtained experience with implementing micro services within applications applying IDEAL principles to such micro services.
+            </span>
+            <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Obtained experience with implementing micro services within applications applying IDEAL principles to such micro services.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.endOfExperience1 && isPc" typingAnimation [typeSpeed]="7" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gained further experience with unit testing whilst working with SOLID principles so that tests can easily be written and maintained
+            </span>
+            <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Gained further experience with unit testing whilst working with SOLID principles so that tests can easily be written and maintained
+              </span>
           </p>
         </div>
-        <h3 class="experience">C# .NET Developer - Satoshi Systems Ltd</h3>
-        <h3 class="experience-time-period">December 2020 - November 2021</h3><br>
+        <h3 class="experience">
+          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          C# .NET Developer - Satoshi Systems Ltd
+          </span>
+          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            C# .NET Developer - Satoshi Systems Ltd
+            </span>
+        </h3>
+        <h3 class="experience-time-period">
+          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          December 2020 - November 2021
+          </span>
+          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            December 2020 - November 2021
+            </span>
+        </h3><br>
         <div>
         <p class="experience">
+          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Analysed bespoke commodity trading reports and business account analysis using SQL to interact with multiple databases at once and query data from different entities.
+          </span>
+          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="4" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            • Analysed bespoke commodity trading reports and business account analysis using SQL to interact with multiple databases at once and query data from different entities.
+            </span>
         </p>
         <p class="experience">
+          <span *ngIf="this.endOfExperience2 && isPc" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Built functionalities to manage bulk reports and automatically email them to clients using C# and Acumatica ERP, saving us around 33 hours each week of manual work.
+          </span>
+          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            • Built functionalities to manage bulk reports and automatically email them to clients using C# and Acumatica ERP, saving us around 33 hours each week of manual work.
+            </span>
         </p>
         <p class="experience" style="padding-bottom: 50px;">
+          <span *ngIf="this.endOfExperience2 && isPc" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Developed new features that affected company products using TypeScript, React, those features were deployed to production to be used by small and medium sized enterprises.
+        </span>
+        <span *ngIf="this.endOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          • Developed new features that affected company products using TypeScript, React, those features were deployed to production to be used by small and medium sized enterprises.
+        </span>
         </p>
       </div>
-          <h3 class="experience">Freelance</h3>
-          <h3 class="experience-time-period" style="padding-bottom: 25px;">October 2019 - Decmber 2020</h3>
+          <h3 class="experience">
+            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            Freelance
+            </span>
+            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              Freelance
+              </span>
+          </h3>
+          <h3 class="experience-time-period" style="padding-bottom: 25px;">
+            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            October 2019 - Decmber 2020
+            </span>
+            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              October 2019 - Decmber 2020
+              </span>
+          </h3>
         <div>
           <p class="experience">
+            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Designed, developed, and deployed robust web-client user interfaces which integrate with various server-side components and back-end systems.
+            </span>
+            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="4" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Designed, developed, and deployed robust web-client user interfaces which integrate with various server-side components and back-end systems.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Built highly scalable, reusable and resilient APIs for web-native platforms.
+            </span>
+            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Built highly scalable, reusable and resilient APIs for web-native platforms.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.endOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Engineered efficient and reusable front-end abstractions and systems
+            </span>
+            <span *ngIf="this.endOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Engineered efficient and reusable front-end abstractions and systems
+              </span>
           </p>
           <p class="experience" style="padding-bottom: 50px;">
+            <span *ngIf="this.endOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Developed and implemented low-latency, high-availability, scalable and accessible UX for web platforms based on business needs.
+            </span>
+            <span *ngIf="this.endOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Developed and implemented low-latency, high-availability, scalable and accessible UX for web platforms based on business needs.
+              </span>
           </p>
         </div>
-          <h3 class="experience">Technical Services - Egress Software Technologies</h3>
-          <h3 class="experience-time-period" style="padding-bottom: 25px;">May 2019 - October 2019</h3>
+          <h3 class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            Technical Services - Egress Software Technologies
+            </span>
+            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              Technical Services - Egress Software Technologies
+              </span>
+          </h3>
+          <h3 class="experience-time-period" style="padding-bottom: 25px;">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            May 2019 - October 2019
+            </span>
+            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              May 2019 - October 2019
+              </span>
+          </h3>
           <div>
           <p class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gathered and analysed information from clients about their current IT infrastructure,prior to deploying any Egress products they have purchased.
+            </span>
+            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Gathered and analysed information from clients about their current IT infrastructure,prior to deploying any Egress products they have purchased.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Identified customer insights and drove a tight feedback loop with product and technical teams to deliver re-framing results.
+            </span>
+            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Identified customer insights and drove a tight feedback loop with product and technical teams to deliver re-framing results.
+            </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Tracked and troubleshot technical issues when deploying Egress software and implemented solutions in a prompt manner using Exchange and O365 servers.
+            </span>
+            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Tracked and troubleshot technical issues when deploying Egress software and implemented solutions in a prompt manner using Exchange and O365 servers.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Rapidly reviewed, interpreted. coordinated and took action on external inquiries and provided timely and accessible support.
+            </span>
+            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Rapidly reviewed, interpreted. coordinated and took action on external inquiries and provided timely and accessible support.
+              </span>
           </p>
           <p class="experience">
+            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Partnered with all levels of the organisation, drove results, proactively identified and resolved problems, and made challenging decisions.
+            </span>
+            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+              • Partnered with all levels of the organisation, drove results, proactively identified and resolved problems, and made challenging decisions.
+              </span>
           </p>
         </div>
 
@@ -161,7 +308,6 @@
        </div>
     </div>
       </section>
-    </body>
     <section id="interests">
       <h1 class="interests">My Interests</h1>
       <div>
@@ -171,6 +317,5 @@
       </p>
       </div>
     </section>
-</html>
 
-
+<!-- </div> -->
