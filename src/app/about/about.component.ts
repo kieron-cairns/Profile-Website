@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, HostListener ,AfterViewInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener ,AfterViewInit, Input } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { ViewChild } from '@angular/core';
@@ -7,13 +7,17 @@ import { Container } from 'tsparticles';
 import { Main } from 'tsparticles';
 import { ISourceOptions } from 'tsparticles';
 import { interval, Observable } from 'rxjs';
+import { ScrolledToDirective } from '../services/scrolled-to-directive';
+import { Scroll } from '@angular/router';
+import { MyGlobals } from '../MyGlobals';
 declare var anime: any;              // declare like this
 declare var textWrapper : any
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  viewProviders: [ScrolledToDirective]
 })
 
 export class AboutComponent implements AfterViewInit {
@@ -51,11 +55,56 @@ export class AboutComponent implements AfterViewInit {
   sqlImage:any = "../assets/images/sql-logo.png";
   angularImage:any = "../assets/images/angular-logo.png";
 
-  constructor(private navService: NavigateService) {}
+
+  constructor(private navService: NavigateService, private globals: MyGlobals) {}
 
   isMobile = false
   isPc = false
 
+
+  isEMainHeader()
+  {
+    return this.globals.isEMainH;
+  }
+
+  isE1Header()
+  {
+    return this.globals.isE1H;
+  }
+  isE1Para()
+  {
+    return this.globals.isE1P;
+  }
+
+  isE2Header()
+  {
+    return this.globals.isE2H;
+  }
+  isE2Para()
+  {
+    return this.globals.isE2P;
+  }
+
+  isE3Header()
+  {
+    return this.globals.isE3H;
+  }
+  isE3Para()
+  {
+    return this.globals.isE3P;
+  }
+  isE4Header()
+  {
+    return this.globals.isE4H;
+  }
+  isE4Para()
+  {
+    return this.globals.isE4P;
+  }
+  test()
+  {
+    console.log("Header Received FAM")
+  }
 
   startOfExperience1 = false
   endOfExperience1 = false
@@ -83,8 +132,9 @@ export class AboutComponent implements AfterViewInit {
 @HostListener('window:scroll') onScroll(e: Event): void {
 
   var pageYdistance = window.pageYOffset
-  console.log(pageYdistance)
   // console.log(pageYdistance)
+  // console.log(pageYdistance)
+  console.log(this.globals.isE1H)
 
   //Experience 1 PC
 

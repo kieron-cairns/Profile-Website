@@ -40,236 +40,218 @@
       <!-- <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000">
         {{ testType }}
     </span> -->
-
-
+    <div class="scroll-to" scrolledToEMainH #scrolledToElement="scrolledToEMainH"></div>
 
           <p class="about">
-            <span typingAnimation [typeSpeed]="13" [condition]="start" [startDelay]="250">
+            <span typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="250">
               I am an experienced software & web developer that implements agile frameworks and languages to provide robust and scalable systems that can help your business grow. I enjoy challenging myself by keeping on top of the latest trends.
 
           </span>
+
             <!-- I am an experienced software & web developer that implements agile frameworks and languages to provide robust and scalable systems that can help your business grow. I enjoy challenging myself by keeping on top of the latest trends. -->
 
           </p>
+
+
+          <div class="scroll-to" scrolledTo #scrolledToElement="scrolledTo"></div>
 
         <section id="experience">
 
           <h1 class="experience">
 
-            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <!-- <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
               EXPERIENCE
-          </span>
-          <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          </span> -->
+
+          <span *ngIf="this.isEMainHeader()" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             EXPERIENCE
         </span>
+
+          <!-- <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            EXPERIENCE
+        </span> -->
+
             </h1>
+            <div class="scroll-to" scrolledToExp1Para #scrolledToElement="scrolledToExp1Para"></div>
+
           <h3 class="experience">
-            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Header()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             Synectics Plc
             </span>
-            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              Synectics Plc
-            </span>
+
           </h3>
+
+
           <h3 class="experience-time-period">
-            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Header()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             November 2021 - Current
             </span>
-            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <!-- <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
               November 2021 - Current
-              </span>
+              </span> -->
           </h3><br>
           <div>
           <p class="experience">
-            <span *ngIf="this.startOfExperience1 && this.isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Created Rest APIs for data management and event subscribers to govern the state of data within applications
             </span>
-            <span *ngIf="this.startOfMobExperience1 && this.isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="500" [hideCursorOnComplete]="true">
-              • Created Rest APIs for data management and event subscribers to govern the state of data within applications
-              </span>
-
           </p>
+
+
+
           <p class="experience">
-            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Implemented event driven based enrichment to add additional data to incoming events that result in the publication of newly enriched same version events
             </span>
-            <span *ngIf="this.startOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start"  [startDelay]="1500" [hideCursorOnComplete]="true">
-              • Implemented event driven based enrichment to add additional data to incoming events that result in the publication of newly enriched same version events
-              </span>
           </p>
+
           <p class="experience">
-            <span *ngIf="this.startOfExperience1 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gained the understanding of applying SOLID principles to OOP design to achieve scalability and easy addition or removal of components whilst keeping classed based dependencies to a minimum.
          </span>
-         <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-          • Gained the understanding of applying SOLID principles to OOP design to achieve scalability and easy addition or removal of components whilst keeping classed based dependencies to a minimum.
-       </span>
           </p>
+           <!--********************** Start E2 Header ************************************-->
+           <div class="scroll-to" scrolledToE2H #scrolledToElement="scrolledToE2H"></div>
+
+
+
           <p class="experience">
-            <span *ngIf="this.endOfExperience1 && isPc" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Obtained experience with implementing micro services within applications applying IDEAL principles to such micro services.
             </span>
-            <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Obtained experience with implementing micro services within applications applying IDEAL principles to such micro services.
-              </span>
           </p>
+
           <p class="experience">
-            <span *ngIf="this.endOfExperience1 && isPc" typingAnimation [typeSpeed]="7" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE1Para()" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gained further experience with unit testing whilst working with SOLID principles so that tests can easily be written and maintained
             </span>
-            <span *ngIf="this.endOfMobExperience1 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Gained further experience with unit testing whilst working with SOLID principles so that tests can easily be written and maintained
-              </span>
           </p>
         </div>
+
+  <!--********************** Start E2 Para ************************************-->
+  <div class="scroll-to" scrolledToExp2Para #scrolledToElement="scrolledToExp2Para"></div>
+
+
         <h3 class="experience">
-          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          <span *ngIf="this.isE2Header()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           C# .NET Developer - Satoshi Systems Ltd
           </span>
-          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-            C# .NET Developer - Satoshi Systems Ltd
-            </span>
+
         </h3>
         <h3 class="experience-time-period">
-          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          <span *ngIf="this.isE2Header()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           December 2020 - November 2021
           </span>
-          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-            December 2020 - November 2021
-            </span>
+
         </h3><br>
+
         <div>
         <p class="experience">
-          <span *ngIf="this.startOfExperience2 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          <span *ngIf="this.isE2Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Analysed bespoke commodity trading reports and business account analysis using SQL to interact with multiple databases at once and query data from different entities.
           </span>
-          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="4" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-            • Analysed bespoke commodity trading reports and business account analysis using SQL to interact with multiple databases at once and query data from different entities.
-            </span>
         </p>
+          <!--********************** Start E3 Header ************************************-->
+          <div class="scroll-to" scrolledToE3H #scrolledToElement="scrolledToE3H"></div>
         <p class="experience">
-          <span *ngIf="this.endOfExperience2 && isPc" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          <span *ngIf="this.isE2Para()" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Built functionalities to manage bulk reports and automatically email them to clients using C# and Acumatica ERP, saving us around 33 hours each week of manual work.
           </span>
-          <span *ngIf="this.startOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-            • Built functionalities to manage bulk reports and automatically email them to clients using C# and Acumatica ERP, saving us around 33 hours each week of manual work.
-            </span>
         </p>
+
+
         <p class="experience" style="padding-bottom: 50px;">
-          <span *ngIf="this.endOfExperience2 && isPc" typingAnimation [typeSpeed]="8" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+          <span *ngIf="this.isE2Para()" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
           • Developed new features that affected company products using TypeScript, React, those features were deployed to production to be used by small and medium sized enterprises.
         </span>
-        <span *ngIf="this.endOfMobExperience2 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-          • Developed new features that affected company products using TypeScript, React, those features were deployed to production to be used by small and medium sized enterprises.
-        </span>
+
+
         </p>
+           <!--********************** Start E3 Para ************************************-->
+           <div class="scroll-to" scrolledToExp3Para #scrolledToElement="scrolledToExp3Para"></div>
+
       </div>
           <h3 class="experience">
-            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Header()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             Freelance
             </span>
-            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              Freelance
-              </span>
           </h3>
+
           <h3 class="experience-time-period" style="padding-bottom: 25px;">
-            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Header()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             October 2019 - Decmber 2020
             </span>
-            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              October 2019 - Decmber 2020
-              </span>
           </h3>
         <div>
           <p class="experience">
-            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Designed, developed, and deployed robust web-client user interfaces which integrate with various server-side components and back-end systems.
             </span>
-            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="4" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Designed, developed, and deployed robust web-client user interfaces which integrate with various server-side components and back-end systems.
-              </span>
           </p>
+            <!--********************** Start E4 Header ************************************-->
+            <div class="scroll-to" scrolledToE4H #scrolledToElement="scrolledToE4H"></div>
           <p class="experience">
-            <span *ngIf="this.startOfExperience3 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Built highly scalable, reusable and resilient APIs for web-native platforms.
             </span>
-            <span *ngIf="this.startOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Built highly scalable, reusable and resilient APIs for web-native platforms.
-              </span>
+
           </p>
+
+
           <p class="experience">
-            <span *ngIf="this.endOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Para()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Engineered efficient and reusable front-end abstractions and systems
             </span>
-            <span *ngIf="this.endOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Engineered efficient and reusable front-end abstractions and systems
-              </span>
+
           </p>
+
           <p class="experience" style="padding-bottom: 50px;">
-            <span *ngIf="this.endOfExperience3 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE3Para()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Developed and implemented low-latency, high-availability, scalable and accessible UX for web platforms based on business needs.
             </span>
-            <span *ngIf="this.endOfMobExperience3 && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Developed and implemented low-latency, high-availability, scalable and accessible UX for web platforms based on business needs.
-              </span>
+
           </p>
+           <!--********************** Start E4 Para ************************************-->
+           <div class="scroll-to" scrolledToExp4Para #scrolledToElement="scrolledToExp4Para"></div>
         </div>
           <h3 class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Header()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             Technical Services - Egress Software Technologies
             </span>
-            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              Technical Services - Egress Software Technologies
-              </span>
+
           </h3>
           <h3 class="experience-time-period" style="padding-bottom: 25px;">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Header()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             May 2019 - October 2019
             </span>
-            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="10" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              May 2019 - October 2019
-              </span>
           </h3>
           <div>
           <p class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Gathered and analysed information from clients about their current IT infrastructure,prior to deploying any Egress products they have purchased.
             </span>
-            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Gathered and analysed information from clients about their current IT infrastructure,prior to deploying any Egress products they have purchased.
-              </span>
+
           </p>
           <p class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Identified customer insights and drove a tight feedback loop with product and technical teams to deliver re-framing results.
             </span>
-            <span *ngIf="this.startOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="6" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Identified customer insights and drove a tight feedback loop with product and technical teams to deliver re-framing results.
-            </span>
           </p>
           <p class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Para()" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Tracked and troubleshot technical issues when deploying Egress software and implemented solutions in a prompt manner using Exchange and O365 servers.
             </span>
-            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="3" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Tracked and troubleshot technical issues when deploying Egress software and implemented solutions in a prompt manner using Exchange and O365 servers.
-              </span>
           </p>
           <p class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Para()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Rapidly reviewed, interpreted. coordinated and took action on external inquiries and provided timely and accessible support.
             </span>
-            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Rapidly reviewed, interpreted. coordinated and took action on external inquiries and provided timely and accessible support.
-              </span>
           </p>
           <p class="experience">
-            <span *ngIf="this.startOfExperience4 && isPc" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
+            <span *ngIf="this.isE4Para()" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
             • Partnered with all levels of the organisation, drove results, proactively identified and resolved problems, and made challenging decisions.
             </span>
-            <span *ngIf="this.endOfExperience4Mob && isMobile" typingAnimation [typeSpeed]="9" [condition]="start" [startDelay]="0" [hideCursorOnComplete]="true">
-              • Partnered with all levels of the organisation, drove results, proactively identified and resolved problems, and made challenging decisions.
-              </span>
+
           </p>
         </div>
 
